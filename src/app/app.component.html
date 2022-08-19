@@ -1,0 +1,16 @@
+<hello name="{{ name }}"></hello>
+<form [formGroup]="myReactiveForm" (ngSubmit)="Submit()">
+  <div class="form-control">
+    <label for="username">Username: </label><br>
+    <input type="text" placeholder="Enter Username" formControlName="username">
+  </div>
+  <div class="form-control">
+    <label for="email">Email: </label><br>
+    <input type="text" placeholder="Enter Email" formControlName="email">
+  </div>
+  <div class="form-control">
+    <label for="contact">Contact: </label><br>
+    <input type="text" placeholder="Enter Contact" formControlName="contact">
+  </div>
+  <button type="submit">Submit</button>
+</form>
